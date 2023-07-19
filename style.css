@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap");
+
+.nav-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.nav-flex-row li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 28px 15px;
+}
+
+.nav-flex-row li a {
+  font-family: "Big Shoulders Text", cursive;
+  color: rgb(17, 15, 15);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.nav-flex-row li a:hover {
+  background: #e7e7e7;
+}
+
+.section-intro {
+  height: 820px;
+  background-image: url(photo/photo-1550966871-3ed3cdb5ed0c.avif);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+#about{
+  color: #000000;
+  background-color: white;
+}
+
+.section-intro h1 {
+  text-align: center;
+  background: -webkit-linear-gradient(rgb(12, 62, 241), rgb(212, 4, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4em;
+  font-weight: 700;
+  cursor: pointer;
+}
+ .top-button {
+  position: absolute;
+  width: 600px;
+  z-index: 10;
+  top: 88px;
+  left: 624px;
+  background-color: transparent;
+  color: white;
+  padding: 20px 15px;
+  visibility: hidden;
+}
+.top-button2 {
+  position: absolute;
+  width: 500px;
+  z-index: 10;
+  top: 88px;
+  left: 924px;
+  background-color: white;
+  color: black;
+  padding: 20px 15px;
+  visibility: hidden;
+}
+.section-intro h1:hover {
+  text-decoration: underline;
+}
+.section-intro header {
+  display: flex;
+  flex: 4;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-to-book-wrapper {
+  flex: 1;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3c0;
+  padding: 50px 30px;
+}
+
+.link-to-book {
+  color: white;
+  display: block;
+  border: 2px solid white;
+  padding: 5px 10px;
+  background-color: transparent;
+  font-weight: 100;
+}
+
+a.link-to-book:hover {
+  background-color: black;
+  color: #95999e;
+  text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.carousel-inner {
+  background-image: url(photo/food3.png);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 30px 20px;
+}
+
+.btn.btn-primary {
+  font-family: "Big Shoulders Text", cursive;
+  color: #ffffff;
+  background-color: #95999e;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  border: 0;
+}
+
+.btn.btn-primary:hover {
+  background-color: #0dee20;
+}
+.opening-time,
+.contact-address {
+  flex: 1;
+  margin: 30px 20px;
+  font-size: 1.2em;
+}
+
+.form-group p {
+  font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-address p span {
+  display: block;
+}
+
+@media (min-width: 577px) and (max-width: 800px) {
+  .section-intro {
+    height: 500px;
+  }
+
+  .about-section p,
+  .about-section h3 {
+    font-size: 20px;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+
+  .row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-intro {
+    height: 300px;
+  }
+
+  .about-section {
+    padding: 30px;
+  }
+
+  .section-intro h1 {
+    font-size: 2em;
+  }
+
+  .about-section p,
+  .about-section h3 {
+    font-size: 15px;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+
+  .row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-flex h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .form-group p {
+    font-size: 15px;
+  }
+
+  .opening-time p span,
+  .contact-address p span {
+    font-size: 15px;
+    text-align: center;
+  }
+}
